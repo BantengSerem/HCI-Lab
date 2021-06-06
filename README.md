@@ -1,4 +1,4 @@
 # HCI-Lab
 
-inget tugas yg utama gaes
+inget tugas yg utama gaes,
 jgn males 
