@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,29 +8,98 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- <link rel="stylesheet" href="index.js"> -->
     <title>Doto_2</title>
 </head>
+
 <body>
     <header>
         <div class="navbar_container">
-            <a href="#"><img src="../source/Untitled-1.png" alt=""></a>
+            <a href="#"><img src="../source/logodoto2.png" alt=""></a>
             <div class="nav_buttons">
                 <a href="#">Heroes</a>
                 <a href="#">Game</a>
-                <a href="#">Guide</a>
+                <a href="#">Merchandises</a>
             </div>
-            <span class="fa fa-bars menu_icon" id="menu">
-                <div class="drop_down">
-                    <ul>
-                        <li><a href="#">Heroes</a></li>
-                        <li><a href="#">Game</a></li>
-                        <li><a href="#">Guide</a></li>
-                    </ul>
-                </div>
-            </span>
+            <div class="menu_container">
+                <span class="fa fa-bars menu_icon" id="menu">
+                    <div class="drop_down">
+                        <ul>
+                            <li><a href="#">Heroes</a></li>
+                            <li><a href="#">Game</a></li>
+                            <li><a href="#">Merchandises</a></li>
+                        </ul>
+                    </div>
+                </span>
+            </div>
         </div>
     </header>
-    <!-- <script src="../JS/index.js"></script> -->
+    <div class="body_container">
+        <div class="body_content">
+            <h1>Welcome Champs</h1>
+            <h1>Time To Get Ready</h1>
+        </div>
+    </div>
+    <div class="heroes">
+        <div class="h-intro">
+            <p>WHO WILL YOU CHOOSE</p>
+            <a href="#">VIEW ALL HEROES</a>
+            <p>HEROES</p>
+        </div>
+        <div class="hero-list">
+            <div class="hero">
+                <div class="front">
+                    <img src="../Source/hero1.png" alt="">
+                </div>
+                <div class="back">
+                    <p>Jugger</p>
+                </div>
+            </div>
+            <div class="hero">
+                <div class="front">
+                    <img src="../Source/hero1.png" alt="">
+                </div>
+                <div class="back">
+                    <p>Jugger</p>
+                </div>
+            </div>
+            <div class="hero">
+                <div class="front">
+                    <img src="../Source/hero1.png" alt="">
+                </div>
+                <div class="back">
+                    <p>Jugger</p>
+                </div>
+            </div>
+            <div class="hero">
+                <div class="front">
+                    <img src="../Source/hero1.png" alt="">
+                </div>
+                <div class="back">
+                    <p>Jugger</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="playNow-container">
+        <div class="play-content">
+            <!-- <img src="../Source/playbg.jpg" alt="" class="playBg"> -->
+            <div class="playDesc">
+                <h1>Play Now</h1>
+                <button type="button">REGISTER</button>
+                <div class="revealer"></div>
+            </div>
+        </div>
+    </div>
+    <!-- <footer>
+
+    </footer> -->
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js"></script>
+<script src="../JS/index.js"></script>
+
 </html>
