@@ -1,0 +1,362 @@
+*,
+a {
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Mate SC', serif;
+    /* overflow: hidden; */
+}
+
+.navbar_container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: #323232;
+}
+
+.nav_buttons {
+    display: flex;
+    flex-direction: row;
+    margin: auto 20px;
+    /* display: none; */
+}
+
+.nav_buttons a {
+    border-radius: 25px;
+    margin: 0 20px;
+    padding: 5px 15px;
+    border: 3px solid #ffffff50;
+    color: #ffffff50;
+    transition: 0.2s;
+}
+
+.nav_buttons a:hover {
+    box-shadow: 0 5px #888888;
+    margin: -5px 20px 5px 20px;
+    padding: 5px 15px;
+    border: 3px solid beige;
+    color: bisque;
+}
+
+.navbar_container img {
+    opacity: 0.5;
+    margin: auto 10px;
+    width: 80px;
+    float: left;
+    cursor: pointer;
+}
+
+.navbar_container img:hover {
+    opacity: 1;
+}
+
+.menu_container {
+    display: none;
+}
+
+.menu_icon {
+    color: white;
+    float: right;
+    font-size: 15px;
+    margin: auto 10px;
+    display: none;
+    padding: 12px 20px;
+    transition: 0.3s;
+}
+
+.drop_down {
+    text-align: center;
+    height: 220px;
+    letter-spacing: 2px;
+    padding: 25px;
+    position: absolute;
+    right: 63px;
+    top: 0px;
+    font-size: large;
+    background-color: #ff1e56;
+    display: none;
+    transition: top 0.2s;
+    border: 2px solid rgb(209, 217, 224);
+}
+
+.drop_down li {
+    padding: 20px;
+}
+
+.drop_down a {
+    padding: 0 10px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #000000;
+    z-index: 1;
+}
+
+.body_container {
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    /* background-repeat: no-repeat; */
+    background-image: url(../Source/cover.jpg);
+}
+
+.body_content {
+    letter-spacing: 2px;
+    position: relative;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.body_content h1 {
+    font-size: 8vw;
+    padding: 5px 0;
+    background: 50% 100% / 50% 50% no-repeat radial-gradient(ellipse at bottom, rgb(255, 255, 255), transparent, transparent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: reveal 3000ms ease-in-out forwards 1000ms, glow 3000ms linear infinite 3000ms;
+}
+
+@keyframes reveal {
+    100% {
+        letter-spacing: 4px;
+        background-size: 300% 300%;
+    }
+}
+
+@keyframes glow {
+    40% {
+        text-shadow: 0 0 10px rgb(223, 223, 223);
+    }
+}
+
+.heroes {
+    background-color: #323232;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 30vh;
+}
+
+.h-intro {
+    min-height: 11rem;
+    padding: 2rem;
+    letter-spacing: 2px;
+    background-color: #1b1b1b;
+    box-shadow: 0 0 30px #000000;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.h-intro p {
+    font-size: 3rem;
+    padding: 10px 0px;
+    margin-bottom: 20px;
+    border-bottom: 0.1em solid #ff005c;
+}
+
+.h-intro a {
+    padding: 0px 1em;
+    color: #ffac41;
+    transition: 1s;
+    text-shadow: 0px 0px 10px rgb(22, 22, 22);
+}
+
+.h-intro a:hover {
+    border-radius: 0.1em;
+    border: 0.125em solid #fcdbb4;
+    font-size: 1.125em;
+    text-shadow: 0 0 10px #fcdbb4, 0 0 10px #f8c17d;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card-list {
+    background-color: transparent;
+    width: 17rem;
+    height: 17rem;
+    perspective: 1000px;
+    border-radius: 1em;
+    margin: 2rem;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 1em;
+}
+
+.front-card img {
+    width: 100%;
+}
+
+.card-list:hover .card {
+    transform: rotateY(180deg);
+}
+
+.front-card,
+.back-card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 1em;
+    text-align: center;
+    color: #fcdbb4;
+}
+
+.front-card {
+    background-color: #bbb;
+}
+
+.back-card {
+    background-color: #ff1e56;
+    transform: rotateY(180deg);
+}
+
+.gameplay {
+    height: 100%;
+    padding: 5vw 0px;
+    background: black;
+    box-shadow: 0px 0px 20px black;
+    text-align: center;
+    font-size: 4vw;
+}
+
+.game-text:hover {
+    border-bottom: solid 2px #e9e1d5;
+}
+
+.slider {
+    margin: 7vh 0px;
+    position: relative;
+    display: flex;
+    height: 50vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.slides {
+    height: 100%;
+    width: 100%;
+    margin: 2em 0px;
+    display: flex;
+    justify-content: center;
+    border-radius: 1em;
+}
+
+.slides img {
+    width: auto;
+    display: none;
+    border-radius: 1em;
+    box-shadow: 0px 0px 0.5em rgb(163, 157, 157);
+}
+
+.slider button {
+    position: absolute;
+    top: 50%;
+    transform: rotateY(-50%);
+    font-size: 30px;
+    color: #9cd2f7;
+    border: 0px;
+    background: transparent;
+    padding: 0px 4px;
+}
+
+.slider button:hover {
+    border: #8a76d3 solid 2px;
+    border-radius: 2px;
+}
+
+.prev {
+    /* position: absolute;
+    top: 50%; */
+    left: 20%;
+}
+
+.next {
+    /* position: absolute;
+    top: 50%; */
+    right: 20%;
+}
+
+.slides .active {
+    display: flex;
+}
+
+.playNow-container {
+    position: relative;
+    padding: 20px 0;
+    background-color: #000000;
+}
+
+.play-content {
+    width: 100%;
+    height: 40vh;
+}
+
+.playDesc {
+    margin-left: 4vw;
+    font-size: 3.5vw;
+    position: relative;
+    top: 25%;
+    transform: translateY(-25%);
+    text-shadow: 0px 0px 2px rgb(231, 226, 226), 0px 0px 10px black;
+}
+
+.playDesc h1 {
+    color: #e9e1d5;
+}
+
+.playDesc button {
+    letter-spacing: 1vw;
+    position: absolute;
+    font-size: 2vw;
+    padding: 1vw 2vw;
+    border: #810034 solid 4px;
+    border-radius: 4px;
+    background-color: transparent;
+    transition: 0.3s;
+    opacity: 0.5;
+}
+
+.playDesc button:hover {
+    opacity: 1;
+    margin: -5px 0 5px 0;
+    color: antiquewhite;
+    border: #ff005c solid 4px;
+}
+
+@media screen and (max-width: 800px) {
+    .menu_icon:hover {
+        color: #ffac41;
+    }
+    .navbar_container img:hover {
+        opacity: 1;
+    }
+    .drop_down a:hover {
+        border-bottom: solid 2px aliceblue;
+    }
+    .menu_container {
+        display: flex;
+    }
+    .nav_buttons {
+        display: none;
+    }
+}
