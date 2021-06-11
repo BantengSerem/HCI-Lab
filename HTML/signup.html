@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/signup.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <title>Sign_Up</title>
+</head>
+
+<body>
+    <div class="content">
+        <p>Sign Up</p>
+        <div id="error"></div>
+        <form action="/JS/signup.js" method="GET" id="form">
+            <label for="username">Name: </label>
+            <input type="text" name="username" id="username">
+
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email">
+
+            <label for="password">Password: </label>
+            <input type="password" name="password" id="password">
+
+            <label for="region">Region: </label>
+            <input type="text" name="region" id="region">
+
+            <label for="dob">Date of Birth: </label>
+            <input type="date" name="dob" id="dob">
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+<script src="../JS/signup.js"></script>
+
+</html>
