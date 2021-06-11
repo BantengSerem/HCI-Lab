@@ -1,0 +1,21 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form {
+    position: relative;
+    padding: 5% 10%;
+    margin: 5% 10%;
+    background: wheat;
+}
+
+form input {
+    margin: 2% 0px;
+}
