@@ -6,7 +6,6 @@ a {
     text-decoration: none;
     list-style: none;
     font-family: 'Mate SC', serif;
-    /* overflow: hidden; */
 }
 
 .navbar_container {
@@ -324,7 +323,7 @@ header {
     color: #e9e1d5;
 }
 
-.playDesc button {
+.playDesc a {
     letter-spacing: 1vw;
     position: absolute;
     font-size: 2vw;
@@ -336,7 +335,7 @@ header {
     opacity: 0.5;
 }
 
-.playDesc button:hover {
+.playDesc a:hover {
     opacity: 1;
     margin: -5px 0 5px 0;
     color: antiquewhite;
