@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/signup.css">
+    <link rel="stylesheet" href="../CSS/merch_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <title>Sign_Up</title>
+    <title>Merchandise</title>
 </head>
 
 <body>
+
     <header>
         <div class="navbar_container">
             <a href="main.html"><img src="../source/Logo1.png" alt=""></a>
@@ -35,48 +37,113 @@
             </div>
         </div>
     </header>
+
     <div class="content">
-        <form name="form" action="" onsubmit="validateForm(event)">
-            <h1>Sign Up</h1>
-            <div class="username">
-                <label for="username">Name: <p id="error_username"></p></label>
-                <input type="text" name="username" id="username">
+        <div>
+            <h1>Merchandise</h1>
+        </div>
+
+
+        <div>
+            <div class="items">
+
+                <div>
+                    <h4>Doto 2 T-Shirt</h4>
+                    <img class="itmimg" src="../Source/Merch 1.png" alt="">
+                </div>
+
+
+                <div class="details">
+
+                    <br><br><br>
+                    <p>Available Colors: </p>
+
+                    <div class="choice">
+                        <img class="color" src="../Source/Red.png" alt="">
+                        <img class="color" src="../Source/Orange.png" alt="">
+                        <img class="color" src="../Source/Yellow.png" alt="">
+                        <img class="color" src="../Source/Green.png" alt="">
+                        <img class="color" src="../Source/Blue.png" alt="">
+                        <img class="color" src="../Source/Purple.png" alt="">
+                        <img class="color" src="../Source/Pink.png" alt="">
+                        <img class="color" src="../Source/Brown.png" alt="">
+                        <img class="color" src="../Source/Grey.png" alt="">
+                        <img class="color" src="../Source/Black.png" alt="">
+                        <img class="color" src="../Source/White.png" alt="">
+                    </div>
+
+                </div>
             </div>
 
-            <div class="email">
-                <label for="email">Email: <p id="error_email"></p></label>
-                <input type="email" name="email" id="email">
+            <div class="items">
+
+                <div>
+                    <h4>Heroes T-Shirt</h4>
+                    <img class="itmimg" src="../Source/Merch 2.png" alt="">
+                </div>
+
+                <div class="details">
+
+                    <br><br><br>
+                    <p>Available Colors: </p>
+
+                    <div class="choice">
+                        <img class="color" src="../Source/Red.png" alt="">
+                        <img class="color" src="../Source/Orange.png" alt="">
+                        <img class="color" src="../Source/Yellow.png" alt="">
+                        <img class="color" src="../Source/Green.png" alt="">
+                        <img class="color" src="../Source/Blue.png" alt="">
+                        <img class="color" src="../Source/Purple.png" alt="">
+                        <img class="color" src="../Source/Pink.png" alt="">
+                        <img class="color" src="../Source/Brown.png" alt="">
+                        <img class="color" src="../Source/Grey.png" alt="">
+                        <img class="color" src="../Source/Black.png" alt="">
+                        <img class="color" src="../Source/White.png" alt="">
+                    </div>
+
+                    <p>Available Heroes: </p>
+
+                    <div class="choice">
+                        <img class="color" src="../Source/juggernaut.jpg" alt="">
+                        <img class="color" src="../Source/razor.jpg" alt="">
+                        <img class="color" src="../Source/Zeus.png" alt="">
+                        <img class="color" src="../Source/Axe.jpg" alt="">
+                        <img class="color" src="../Source/Necrophos.jpg" alt="">
+                        <img class="color" src="../Source/Morphling.png" alt="">
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="password">
-                <label for="password">Password: <p id="error_password"></p></label>
-                <input type="password" name="password" id="password">
-            </div>
+            <div class="items">
 
-            <div>
-                <label for="region">Region: <p id="error_region"></p></label>
-                <input type="radio" id="america" name="region" value="america">
-                <label for="america">America</label><br>
-                <input type="radio" id="europe" name="region" value="europe">
-                <label for="europe">Europe</label><br>
-                <input type="radio" id="asia" name="region" value="asia">
-                <label for="asia">Asia</label><br>
-            </div>
+                <div>
+                    <h4>Heroes Action Figure</h4>
+                    <img class="itmimg" src="../Source/Action Figure.png" alt="">
+                </div>
 
-            <div class="dob">
-                <label for="dob">Date of Birth: <p id="error_DOB"></p></label>
-                <input type="date" name="dob" id="dob">
+                <div class="details">
+
+                    <br><br><br>
+                    <p>Available Heroes: </p>
+
+                    <div class="choice">
+                        <img class="color" src="../Source/juggernaut.jpg" alt="">
+                        <img class="color" src="../Source/razor.jpg" alt="">
+                        <img class="color" src="../Source/Zeus.png" alt="">
+                        <img class="color" src="../Source/Axe.jpg" alt="">
+                        <img class="color" src="../Source/Necrophos.jpg" alt="">
+                        <img class="color" src="../Source/Morphling.png" alt="">
+                    </div>
+
+                </div>
+
             </div>
-            <div>
-                <p class="error" id="error_agree"></p>
-                <input type="checkbox" name="agree" id="agree">I agree to the terms and conditions
-            </div>
-            <div>
-                <input type="submit" value="submit" id="submit">
-            </div>
-        </form>
+        </div>
     </div>
-    <script src="../JS/signup.js"></script>
+
+    <script src="../JS/merch.js"></script>
 </body>
 
 </html>
