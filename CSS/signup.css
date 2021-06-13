@@ -45,25 +45,7 @@ form p {
     box-shadow: 0px 0px 10px rgb(22, 116, 84);
 }
 
-@media screen and (max-width: 800px) {
-    .menu_icon:hover {
-        color: #ffac41;
-    }
-    .navbar_container img:hover {
-        opacity: 1;
-    }
-    .drop_down a:hover {
-        border-bottom: solid 2px aliceblue;
-    }
-    .menu_container {
-        display: flex;
-    }
-    .nav_buttons {
-        display: none;
-    }
-}
-
-*,
+header,
 a {
     color: aliceblue;
     margin: 0;
@@ -146,6 +128,7 @@ a {
 
 .drop_down li {
     padding: 20px;
+    list-style: none;
 }
 
 .drop_down a {
@@ -157,4 +140,22 @@ header {
     top: 0;
     background-color: #000000;
     z-index: 1;
+}
+
+@media screen and (max-width: 800px) {
+    .menu_icon:hover {
+        color: #ffac41;
+    }
+    .navbar_container img:hover {
+        opacity: 1;
+    }
+    .drop_down a:hover {
+        border-bottom: solid 2px aliceblue;
+    }
+    .menu_container {
+        display: flex;
+    }
+    .nav_buttons {
+        display: none;
+    }
 }
